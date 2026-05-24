@@ -9,7 +9,7 @@ nav {
     display: flex;
     justify-content: center;
     background-color: #2b4eff;
-    padding: 10px;
+    padding: 12px;
     gap: 20px;
 }
 
@@ -19,7 +19,11 @@ nav a {
     font-weight: bold;
 }
 
-/* CENTER CONTAINER */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN CONTAINER */
 .container {
     width: 70%;
     margin: auto;
@@ -29,18 +33,33 @@ nav a {
     border-radius: 10px;
 }
 
-/* IMAGE */
-.profile-img {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-}
-img {
+/* CARD STYLE */
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
 }
 
-/* RESPONSIVE */
+/* PROFILE IMAGE (FIXED) */
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 15px auto;
+    border: 3px solid #2b4eff;
+}
+
+/* LIST STYLE */
+.list {
+    padding-left: 20px;
+}
+
+/* RESPONSIVE DESIGN */
 @media (max-width: 600px) {
+
     body {
         background-color: #dfe7ff;
     }
@@ -51,6 +70,11 @@ img {
 
     nav {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
+    }
+
+    .profile-img {
+        width: 140px;
+        height: 140px;
     }
 }
