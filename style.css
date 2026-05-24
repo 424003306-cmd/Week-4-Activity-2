@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f6ff;
+}
+
+/* NAVBAR FLEXBOX */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #2b4eff;
+    padding: 10px;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* CENTER CONTAINER */
+.container {
+    width: 70%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* IMAGE */
+img {
+    border-radius: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    body {
+        background-color: #dfe7ff;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
