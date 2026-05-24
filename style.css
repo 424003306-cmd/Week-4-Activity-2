@@ -30,6 +30,11 @@ nav a {
 }
 
 /* IMAGE */
+.profile-img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
 img {
     border-radius: 10px;
 }
